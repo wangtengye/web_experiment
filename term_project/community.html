@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>社区</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .select {
+            background-color: #237ee8;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-inverse" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">主页&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</a>
+        </div>
+        <div>
+            <ul class="nav navbar-nav">
+                <li><a href="#">风土人情</a></li>
+                <li><a href="#">家乡风貌</a></li>
+                <li><a href="#">家乡土特产品</a></li>
+                <li><a href="#">家乡经济</a></li>
+                <li><a href="#">家乡教育</a></li>
+                <li><a href="#">文化传承</a></li>
+                <li><a href="#">历史名人大事</a></li>
+                <li><a href="#">历史名胜古迹</a></li>
+                <li class="active"><a href="community.html">家乡社区与论坛</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<h1 style="background-color: #337ab7;height: 100px;text-align: center;color: #FFFFFF;line-height:100px">论坛</h1>
+<div id="to-do" style="margin-left: 3%;margin-right: 3%;">
+    <div class="form-group"><textarea id="textarea" placeholder="输入留言" rows="5" class="form-control"></textarea></div>
+    <button type="button" id="add" class="btn btn-info">add</button>
+    <button type="button" id="select_all" class="btn btn-info">select all</button>
+    <button type="button" id="deselect_all" class="btn btn-info">deselect all</button>
+    <button type="button" id="remove" class="btn btn-info">remove</button>
+    <button type="button" id="save" class="btn btn-info">保存为cookie</button>
+    <ul id="to_do_list" class="list-group"></ul>
+</div>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="to_do_list.js"></script>
+</body>
+</html>
