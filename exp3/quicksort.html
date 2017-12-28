@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>快速排序</title>
+</head>
+<body>
+<p id="before"></p>
+<p id="after"></p>
+<script>
+    function swap(nums, l, r) {
+        var temp = nums[r];
+        nums[r] = nums[l];
+        nums[l] = temp;
+    }
+
+    function quicksort(nums, left, right) {
+        if (left >= right)
+            return;
+        var pivotindex = Math.floor((left + right) / 2);
+        var pivot = nums[pivotindex];
+        swap(nums, pivotindex, right);
+        var l = left;
+        var r = right;
+        while (l < r) {
+            while (l < r && nums[l] < pivot) {
+                l++;
+            }
+            while (l < r && nums[r] >= pivot) {
+                r--;
+            }
+
+            swap(nums, l, r);
+        }
+        swap(nums, l, right);
+        quicksort(nums, left, l - 1);
+        quicksort(nums, l + 1, right);
+    }
+
+    nums = []
+    for (var i = 0; i < 20; i++)
+        nums[i] = (Math.round(Math.random() * 99 + 1))
+    console.log(nums);
+    document.getElementById("before").innerHTML = "排序前随机生成1~100的数：" + nums;
+    quicksort(nums, 0, nums.length - 1);
+    console.log(nums);
+    document.getElementById("after").innerHTML = "排序后：" + nums;
+</script>
+</body>
+</html>

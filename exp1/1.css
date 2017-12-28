@@ -1,0 +1,22 @@
+body{
+	background:#f3f3f3;
+}
+
+p{
+	color:#8BAC5B;
+}
+img{
+	width:200px;
+	height:200px;
+	margin:10px;
+	border-radius:25px;
+	border:2px solid #a1a1a1;
+}
+
+ul{
+	color:red;
+}
+
+ol{
+	color:blue;
+}

@@ -1,0 +1,161 @@
+<html>
+
+<head>
+    <title>作业2</title>
+    <meta charset="utf8"/>
+    <link rel="stylesheet" type="text/css" href="2.css" />
+</head>
+
+<body>
+    <div>
+        <h1>Web Program</h1>
+            <p>design by wty</p>
+            <ul>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+                <li>
+                    <a href="#">Links</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Photos</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+            </ul>
+    </div>
+    <div class="left">
+        <h3 id="heading">&lt;h1&gt; -&lt;h6&gt;</h3>
+        <dl>
+            <dt>
+                &lt;h1&gt; -&lt;h6&gt;
+            </dt>
+            <dd>HTML 标题（Heading）是通过 &lt;h1&gt; -&lt;h6&gt; 等标签进行定义的。</dd>
+        </dl>
+        <h4>实例</h4>
+        <pre> 
+            &lt;h1&gt;This is a heading &lt;/h1&gt;
+            &lt;h2&gt;This is a heading &lt;/h2&gt;
+            &lt;h3&gt;This is a heading &lt;/h3&gt;
+        </pre>
+        <hr />
+        <h3 id="p">&lt;p&gt;</h3>
+        <dl>
+            <dt>
+                &lt;p&gt;
+            </dt>
+            <dd>HTML 段落是通过&lt;p&gt; 标签进行定义的。</dd>
+        </dl>
+        <h4>实例</h4>
+        <pre> 
+            &lt;p&gt;This is a paragraph.&lt;/p&gt;
+            &lt;p&gt;This is another paragraph.&lt;/p&gt;
+        </pre>
+        <hr />
+        <h3 id="a">&lt;a&gt;</h3>
+        <dl>
+            <dt>
+                &lt;a&gt;
+            </dt>
+            <dd>HTML 链接是通过&lt;a&gt;标签进行定义的。</dd>
+        </dl>
+        <h4>实例</h4>
+        <pre> 
+            &lt;a&gt; href="http://www.w3school.com.cn">This is a link&lt;/a&gt;
+        </pre>
+        <hr />
+        <h3 id="img">&lt;img&gt;</h3>
+        <dl>
+            <dt>
+                &lt;img&gt;
+            </dt>
+            <dd>HTML 链接是通过&lt;img&gt;标签进行定义的。</dd>
+        </dl>
+        <h4>实例</h4>
+        <pre> 
+            &lt;img src="w3school.jpg" width="104" height="142" /&gt;
+        </pre>
+        <hr />
+        <h3 id="bg">背景</h3>
+        <h4>实例</h4>
+        <p>把元素的背景设置为灰色：</p>
+        <pre> 
+            p {background-color: gray;}
+        </pre>
+        <p>如果您希望背景色从元素中的文本向外少有延伸，只需增加一些内边距：</p>
+        <pre> 
+            p {background-color: gray; padding: 20px;}
+        </pre>
+        <p>如果需要设置一个背景图像，必须为这个属性设置一个 URL 值：</p>
+        <pre> 
+            body {background-image: url(/i/eg_bg_04.gif);}
+        </pre>
+        <hr />
+        <h3 id="text">文本</h3>
+        <h4>实例</h4>
+        <p>下面的规则会使所有段落的首行缩进 5 em：</p>
+        <pre> 
+            p {text-indent: 5em;}
+        </pre>
+        <p>处理空白符</p>
+        <pre> 
+            p {white-space: normal;}
+        </pre>
+        <p>把文本转为大写</p>
+        <pre> 
+            h1 {text-transform: uppercase}
+        </pre>
+        <hr />
+        <h3 id="font">字体</h3>
+        <h4>实例</h4>
+        <p>如果你希望文档使用一种 sans-serif 字体，但是你并不关心是哪一种字体，以下就是一个合适的声明：</p>
+        <pre> 
+            body {font-family: sans-serif;}
+        </pre>
+        <p>除了使用通用的字体系列，您还可以通过 font-family 属性设置更具体的字体。</p>
+        <pre> 
+            h1 {font-family: Georgia;}
+        </pre>
+        <p>设定字体风格</p>
+        <pre> 
+            p.normal {font-style:normal;}
+            p.italic {font-style:italic;}
+            p.oblique {font-style:oblique;}
+        </pre>
+        <hr />
+        <h3 id="ul">列表</h3>
+        <h4>实例</h4>
+        <p>要修改用于列表项的标志类型，可以使用属性 list-style-type：</p>
+        <pre> 
+            ul {list-style-type : square}
+        </pre>
+        <p>你可能想对各标志使用一个图像，这可以利用 list-style-image 属性做到：</p>
+        <pre> 
+            ul li {list-style-image : url(xxx.gif)}
+        </pre>
+        <hr />
+    </div>
+
+    <div class="right">
+        <h2>CATEGORIES</h2>
+        <h3>HTML</h3>
+        <a href="#heading">&lt;h1&gt; -&lt;h6&gt;</a>
+        <a href="#p">&lt;p&gt;</a>
+        <a href="#a">&lt;a&gt;</a>
+        <a href="#img">&lt;img&gt;</a>
+        <h3>CSS</h3>
+        <a href="#bg">背景</a>
+        <a href="#text">文本</a>
+        <a href="#font">字体</a>
+        <a href="#ul">列表</a>
+    </div>
+</body>
+
+</html>

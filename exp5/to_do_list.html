@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>实验五</title>
+    <style>
+        .select {
+            background-color: #237ee8;
+        }
+    </style>
+</head>
+<body>
+<div id="to-do">
+    <textarea id="textarea" placeholder="输入待办事件"></textarea>
+    <input type="button" value="add" id="add"/>
+    <input type="button" value="select all" id="select_all"/>
+    <input type="button" value="deselect all" id="deselect_all"/>
+    <input type="button" value="remove" id="remove"/>
+    <input type="button" value="保存为cookie" id="save"/>
+    <ul id="to_do_list"></ul>
+</div>
+<script src="jquery-3.2.1.min.js"></script>
+<script src="jquery.cookie.js""></script>
+<script src="to_do_list.js"></script>
+</body>
+</html>
