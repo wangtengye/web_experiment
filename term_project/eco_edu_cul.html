@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>经济</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcss.com/echarts/3.8.5/echarts.min.js"></script>
+    <style>
+        strong {
+            display: inline-block;
+            background: #0faff6;
+            padding: 0 10px;
+            font: bold 14px/26px Arial, Helvetica, sans-serif;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-inverse" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">主页&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</a>
+        </div>
+        <div>
+            <ul class="nav navbar-nav">
+                <li><a href="customs.html">风土人情</a></li>
+                <li><a href="scene.html">风貌</a></li>
+                <li><a href="products.html">土特产品</a></li>
+                <li class="active"><a href="eco_edu_cul.html">经济&教育&文化</a></li>
+                <li><a href="history.html">历史名人大事</a></li>
+                <li><a href="sites.html">历史名胜古迹</a></li>
+                <li><a href="community.html">社区与论坛</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<ul id="myTab" class="nav nav-tabs">
+    <li class="active"><a href="#eco" data-toggle="tab">经济</a></li>
+    <li><a href="#edu" data-toggle="tab">教育</a></li>
+    <li><a href="#cul" data-toggle="tab">文化</a>
+    </li>
+</ul>
+<div id="myTabContent" class="tab-content">
+    <div class="tab-pane fade in active" id="eco">
+        <p>广东GDP一直居全国第一</p>
+        <p>2006~2015年GDP如下图所示：</p>
+        <p></p>
+        <div id="main" style="width: 800px;height:400px;margin: 30px;border: #cccccc 1px solid;"></div>
+        <strong>经济发展概况</strong>
+        <div style="overflow-x: hidden; word-break: break-all">
+            <p style="line-height: 25pt; margin-top: 12pt; text-indent: 21pt">
+                广东地处中国大陆最南端，濒临南海，毗邻港澳，是我国改革开放的先行地。广东具有悠久的商贸历史，
+                是中国历史上最早的通商口岸之一和著名的“海上丝绸之路”起点。改革开放以来，广东抓住历史的机遇，
+                积极参与国际竞争与合作，成为中国经济实力最雄厚、市场化程度最高、开放型经济最活跃的地区之一。
+            </p>
+            <p style="line-height: 25pt; margin-top: 3pt; text-indent: 21pt">
+                广东是中国经济增长的强大引擎。改革开放30多年来，广东由落后的农业大省转变为我国位列第一的经济大省和人口大省。
+                2012年全省生产总值57067.92亿元，约占中国大陆经济总量的1/10，连续24年位居全国第一，并先后于1998年、2003年、
+                2007年超过亚洲“四小龙”的新加坡、香港和台湾。
+            <p style="line-height: 25pt; margin-top: 3pt; text-indent: 21pt">
+                广东是中国乃至世界具有重要影响的制造基地。30多年来，广东抓紧世界产业转移机遇，大力促进产业发展和工业化进程，
+                建立了较为完整的产业体系。目前全省拥有电子信息、电气机械、石油化工、纺织服装、食品饮料、建筑材料、造纸、医药、
+                汽车等九大支柱产业，造船、轨道交通装备、核电装备、风电装备、通用飞机等先进制造业加快发展，
+                形成了海陆空三位一体的先进制造业体系。“广东制造”享誉全球，珠三角发展成为世界重要的高技术产业产品生产基地。
+                物流、会展、金融、信息、旅游等现代服务业蓬勃发展，广交会、高交会、中博会等大型国际性会展驰名中外，
+                先进制造业与现代服务业“双轮驱动”格局初步形成。
+            </p>
+            <p style="line-height: 25pt; margin-top: 3pt; text-indent: 21pt">
+                广东是中国对外开放的重要窗口。30多年来，广东依托毗邻港澳的区位优势，不断扩大对外开放，基本形成了多层次、
+                结构优化的对外开放格局，率先建立开放型经济体系，成为我国外向度最高的经济区域。2012年，
+                全省外贸进出口总值达9838.2亿美元，连续27年居全国首位；截至2012年底，我省累计批准了16.7万家外商投资企业，
+                投资国家有100多个，实际利用外商直接投资累计达2988亿美元，约占全国的1/4；
+                240多家世界500强企业在我省投资1382个项目，累计投资总额534亿美元；广东企业对外投资遍布全球100多个国家和地区。
+            </p>
+            <p style="line-height: 25pt; margin-top: 3pt; text-indent: 21pt">
+                广东是中国投资环境最为优越的地区。广东基础设施适度超前发展，交通通讯发达、通关便利，市场化程度高、
+                市场体系完备，人才、资本等生产要素充分集聚。广州南沙、深圳前海、珠海横琴、中新（广州）知识城、
+                东莞台湾高科技园、佛山中德工业服务区等重大平台迅速发展，粤港澳区域经济一体化快速推进，
+                具有较强国际竞争力的大珠三角世界级城市群正加快形成。粤东西北12个新区蓄势待发，为跨国公司投资提供了多元化、
+                全方位、高层次的平台和载体。
+            </p>
+            <p style="line-height: 25pt; margin-top: 3pt; text-indent: 21pt">
+                今日广东，肩负着加快转型升级、建设幸福广东的重任。广东将深入落实科学发展观，加快转变经济发展方式，
+                以提高经济增长质量和效益为中心，进一步深化改革开放，加快经济结构战略性调整，强化创新驱动发展，
+                促进绿色低碳增长，着力保障和改善民生，努力成为发展中国特色社会主义的排头兵、深化改革开放的先行地、
+                探索科学发展的试验区，为率先全面建成小康社会、率先基本实现社会主义现代化而奋斗。
+            </p>
+
+        </div>
+    </div>
+    <div class="tab-pane fade" id="edu">
+        <p style="line-height: 25pt; margin-top: 3pt; text-indent: 21pt">
+            教育“创强争先建高地”取得显著成效。“十二五”期间，广东坚持教育优先发展战略，加强顶层设计和总体规划，
+            积极推进教育“创强争先建高地”中心工作，进一步强化教育的工作统筹、资金统筹和考核统筹。
+            深化省级政府教育统筹综合改革，改变了条块分割模式，优化了资源配置，进一步扩大和落实了学校办学自主权，
+            增强了教育管理的协同性、整体性和科学性，有力地促进了全省教育的协调发展，较大地提升了区域教育发展质量和水平。
+            截至2015年底，全省教育强县（市、区）110个，覆盖率为92.4%，教育强镇(乡、街道)1495个，覆盖率为94.2%。
+            珠三角地区推进教育现代化先进县（市、区）35个，覆盖率为71.4%；推进教育现代化先进市6个，覆盖率为66.67%。
+            高等教育“创新强校工程”全面推进，全省高校综合实力得到进一步增强。截至2015年，全省高校有“两院”院士、
+            973首席科学家、千人计划、长江学者、国家“杰青”等高层次人才308名，11所高校共计40个学科进入ESI全球排名前1％。
+            职业教育加快发展，初步构建起满足区域需求、适应现代产业体系发展趋势的现代职业教育体系。
+        </p>
+    </div>
+    <div class="tab-pane fade" id="cul">
+        <p style="line-height: 25pt; margin-top: 3pt; text-indent: 21pt">
+            南方日报讯（记者/周豫）广东有着悠久的历史文化，各种物质文化遗产和非物质文化遗产资源十分丰富。
+            虽然一些过去曾大受欢迎的传统技艺如檀香扇、满洲窗制作技艺几乎绝迹了，
+            但更多的传统文化在时尚和生活的结合点上寻找“生路”，有些与产业融合对接发展得有声有色、更胜当初。
+        </p>
+        <p style="line-height: 25pt; margin-top: 3pt; text-indent: 21pt">
+            如何进一步对传统文化进行传承与发展？2015年5月15日下午，第十一届文博会上，“内凝品质
+            外拓空间—2015广东传统文化传承与产业发展峰会”在深圳会展中心举行，峰会以主题演讲为主要形式，
+            为粤传统文化产业的多维互动牵线搭桥。现场，来自省内各行业协会、企业代表和文化产业领域专家汇聚一堂，
+            共同探讨新时期广东传统文化的传承和产业发展之路。
+        </p>
+        <strong>　努力培养传承和经营人才</strong>
+        <p style="line-height: 25pt; margin-top: 3pt; text-indent: 21pt">
+            　　多年来，广东省各级政府部门和社会组织，动员了各方面力量，对传统文化的传承与发展问题开展了多方位的探索，
+            目前已经初步形成了政府动员指导、社会广泛参与、企事业单位自觉投入，不断加大有效保护、合理开发利用的可喜局面，
+            但也依然面临很多问题。
+        </p>
+        <p style="line-height: 25pt; margin-top: 3pt; text-indent: 21pt">
+            　　省文化厅党组成员、省文化市场综合执法局局长李剑先表示，重视人才和大胆创新是未来广东传统文化传承和发展的重点，
+            “要通过多种方式培养传统文化最需要的技艺传承人才与经营性人才，保护传统文化的传承载体，
+            积极探索学校教育和社会教育及职业教育相结合的人才培养机制。”
+        </p>
+        <p style="line-height: 25pt; margin-top: 3pt; text-indent: 21pt">
+            　　他也提出，相关企业和单位也要在不断挖掘和提升传统文化品质精髓的基础上，
+            积极探索与现代市场和产业发展相契合的发展道路，对传统文化形态进行现代价值的再创造，使其更具有生命力。
+        </p>
+        <strong>探索传统文化与产业融合</strong>
+        <p style="line-height: 25pt; margin-top: 3pt; text-indent: 21pt">
+            　　现场，包括省级非遗项目广绣传承人伍洁仪，佛山市陶瓷行业协会工艺美术陶瓷专业委员会副会长、
+            佛山市新石湾美术陶瓷厂有限公司严俊等在内的多位专家在一起交流碰撞。其中，
+            中国红木文化博览城董事长林孟礼介绍的红博城创新文化理念和多维经济复合发展模式格外引人注目。
+        </p>
+        <p style="line-height: 25pt; margin-top: 3pt; text-indent: 21pt">
+            　　林孟礼表示，家具企业只有转变生产方式，把经营家具企业转变成经营家具文化产业，才能站稳产业根基。
+            作为新型文化集聚区示范项目，红博城是红木产业辐射相配套的传统产业，也是发展的传承平台，多维整合效益明显，
+            “它运用了创新独有的运作模式，产业发展与文化发展并存，未来我们希望它能在引领产业转型升级、
+            推进产业文化升级中作出贡献。”
+        </p>
+        <p style="line-height: 25pt; margin-top: 3pt; text-indent: 21pt">
+            　　据悉，中山此次参展的1号文化产业综合馆面积达30000平方米，是文博会9大展馆中展览内容最丰富、规模最大的展馆。
+            在结合历届文博会特色的基础上，该馆今年还融合了各地特色，规划打造了红木产业区、工艺美术品区、
+            沉香文化区三大区域，以红博城带队的涉及红木、蜡像、台湾堆漆、金属雕刻等众多由传统文化发展而来的产业项目
+            集体亮相。
+        </p>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var myChart = echarts.init(document.getElementById('main'));
+
+    var option = {
+        title: {
+            text: '广东10年地区生产总值',
+            left: '35%'
+        },
+        tooltip: {
+            formatter: '地区生产总值（亿元）<br/>{b}年:{c}'
+        },
+        xAxis: {
+            data: ["2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015"]
+        },
+        yAxis: {
+            min: 25201.02,
+            max: 73275.02,
+            interval: 9614.8,
+            name: '亿元'
+        },
+        series: [{
+            type: 'bar',
+            data: [26587.76, 31777.01, 36796.71, 39482.56, 46013.06, 53210.28, 57067.92, 62474.79, 67809.85, 72812.55]
+        }]
+    };
+
+    myChart.setOption(option);
+</script>
+</body>
+</html>
